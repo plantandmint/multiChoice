@@ -28,7 +28,7 @@ def auth(request):
 
 def send_pdf(request):
     config = pdfkit.configuration(wkhtmltopdf="C:\\Program Files\\wkhtmltopdf\\bin\\wkhtmltopdf.exe")
-    pdf = pdfkit.from_url("http://192.168.1.3:8000/form-pdf?slug={}".format(request.GET.get("slug")), False, configuration=config)
+    pdf = pdfkit.from_url("http://192.168.43.214:8000/form-pdf?slug={}".format(request.GET.get("slug")), False, configuration=config)
     response = HttpResponse(pdf,content_type='application/pdf')
     response['Content-Disposition'] = 'attachment; filename="example_file.pdf"'
 
