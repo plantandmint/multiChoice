@@ -11,10 +11,7 @@ class FormChoice(models.Model):
     question_amount = models.IntegerField()
     answer_amount = models.IntegerField()
     subject = models.CharField(max_length=5000)
-<<<<<<< HEAD
     subjectID = models.CharField(max_length=5000)
-=======
->>>>>>> 3006ef98b7bd04c69804486eb11bbab6bca1ba27
     date = models.CharField(max_length=50)
     answers = models.TextField()
 
