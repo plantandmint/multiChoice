@@ -109,7 +109,10 @@ app.controller('create_new_form_ctrl', ['$scope', '$location', '$http', '$compil
                 question_amount : $scope.question_amount,
                 answer_amount : $scope.answer_amount,
                 subject : $scope.subject,
+<<<<<<< HEAD
                 subjectID : $scope.subjectID,
+=======
+>>>>>>> 3006ef98b7bd04c69804486eb11bbab6bca1ba27
                 date : $scope.date,
                 answers: JSON.stringify(get_questions($scope.question_amount, $scope.answer_amount))
         }

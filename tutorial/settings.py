@@ -25,7 +25,11 @@ SECRET_KEY = 'l(o-%vtgvw+*$aonrs06cfld+x7p7npjet&c(=p9rmopx=^xdf'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+<<<<<<< HEAD
 ALLOWED_HOSTS = ['192.168.1.3', '127.0.0.1']
+=======
+ALLOWED_HOSTS = ['192.168.43.214', '127.0.0.1']
+>>>>>>> 3006ef98b7bd04c69804486eb11bbab6bca1ba27
 
 REST_SESSION_LOGIN = False
 # Application definition

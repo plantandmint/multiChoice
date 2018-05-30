@@ -3,10 +3,10 @@
   "description": "",
   "main": "index.js",
   "authors": [
-    "boonprakit <boonprakit@proteus-tech.com>"
+    "sippanon <sippanon@proteus-tech.com>"
   ],
   "license": "ISC",
-  "homepage": "https://github.com/smnodame/multiChoice",
+  "homepage": "https://github.com/plantandmint/multiChoice",
   "ignore": [
     "**/.*",
     "node_modules",

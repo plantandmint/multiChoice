@@ -28,7 +28,11 @@ def auth(request):
 
 def send_pdf(request):
     config = pdfkit.configuration(wkhtmltopdf="C:\\Program Files\\wkhtmltopdf\\bin\\wkhtmltopdf.exe")
+<<<<<<< HEAD
     pdf = pdfkit.from_url("http://192.168.1.3:8000/form-pdf?slug={}".format(request.GET.get("slug")), False, configuration=config)
+=======
+    pdf = pdfkit.from_url("http://192.168.43.214:8000/form-pdf?slug={}".format(request.GET.get("slug")), False, configuration=config)
+>>>>>>> 3006ef98b7bd04c69804486eb11bbab6bca1ba27
     response = HttpResponse(pdf,content_type='application/pdf')
     response['Content-Disposition'] = 'attachment; filename="example_file.pdf"'
 
@@ -52,7 +56,10 @@ def create_question(request):
         question_amount = request.data.get("question_amount", 10),
         answer_amount = request.data.get("answer_amount", 4),
         subject = request.data.get("subject", ""),
+<<<<<<< HEAD
         subjectID = request.data.get("subjectID", ""),
+=======
+>>>>>>> 3006ef98b7bd04c69804486eb11bbab6bca1ba27
         date = request.data.get("date", ""),
         answers = request.data.get("answers", "")
     )
@@ -107,7 +114,10 @@ def update_question(request):
         question_amount = request.data.get("question_amount", 10),
         answer_amount = request.data.get("answer_amount", 4),
         subject = request.data.get("subject", ""),
+<<<<<<< HEAD
         subjectID = request.data.get("subjectID", ""),
+=======
+>>>>>>> 3006ef98b7bd04c69804486eb11bbab6bca1ba27
         date = request.data.get("date", ""),
         answers = request.data.get("answers", "")
     )
@@ -131,7 +141,10 @@ class FormSerializer(serializers.Serializer):
     question_amount = serializers.IntegerField()
     answer_amount = serializers.IntegerField()
     subject = serializers.CharField(max_length=5000)
+<<<<<<< HEAD
     subjectID = serializers.CharField(max_length=5000)
+=======
+>>>>>>> 3006ef98b7bd04c69804486eb11bbab6bca1ba27
     date = serializers.CharField(max_length=50)
     answers = serializers.CharField(max_length=5000000)
 
